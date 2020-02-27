@@ -10,18 +10,18 @@
 
   <title>Dine Le Pizza</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans|Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="css/bootsrap.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,
-    600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+ <!-- Bootstrap CSS -->
+ <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans|Roboto&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <link href="bootsrap.css" type="text/css" rel="stylesheet">
+ <!-- Custom fonts for this template -->
+ <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,
+   600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
-  <!-- Custom css -->
-  <link href="css/style.css" rel="stylesheet">
+ <!-- Custom css -->
+ <link href="style.css" type="text/css" rel="stylesheet">
 
 </head>
 
@@ -37,10 +37,10 @@
           <a class="nav-link text-uppercase text-expanded" href="menu.html">Menu</a>
         </li>
         <li class="nav-item px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="order.html">Orders</a>
+          <a class="nav-link text-uppercase text-expanded" href="menu.html#order">Orders</a>
         </li>
         <li class="nav-item px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="#receipt">Your Receipt</a>
+          <a class="nav-link text-uppercase text-expanded" href="menu.html#receipt">Your Receipt</a>
         </li>
         <li class="nav-item px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact Us</a>
@@ -60,18 +60,25 @@
   <div class="container">
     <div class="col-xl-12 col-lg-10 mx-auto">
       <div class="bg-faded rounded p-5">
-        <form id="form2">
-          <div class="form-group">
-            <input type="text" placeholder="Name..." id="name" value="" data-msg="Please enter at least 4 chars"><br>
-            <input type="email" placeholder="Email..." id="email" value="" data-msg="Please enter a valid email">
+        <form id="form1">
+          <div class="form-group form-inline">
+            <input type="text" class="form" placeholder="Name...." name="FNAME" id="name" value=""
+              data-msg="Please enter at least 4 chars">
+            <!-- mce-FNAME -->
+            <input type="email" class="form" placeholder="Email...." name="EMAIL" id="email" value=""
+              data-msg="Please enter a valid email" name="MMERGE2">
+            <!-- mce-EMAIL -->
           </div>
           <div>
-            <textarea rows="4" placeholder="Your message" id="comment" value="" data-msg="Please write something"></textarea>
+            <textarea rows="8" id="comment" placeholder="Write your message here...."
+              data-msg="Please write something for us"></textarea>
+            <!-- mce-MMERGE2 -->
           </div>
-          <button type="submit" class="btn btn-primary" id="button">Submit</button>
+          <button type="submit" class="btn btn-primary" onclick="myMessage()" id="button">Submit</button>
         </form>
-        <h1 id="thank"> Thank you for contacting us!</h1>
+        <h1 id="pop"> Thank you for contacting us!</h1>
       </div>
+    </div>
     </div>
   </div>
   </div><br>
