@@ -9,15 +9,14 @@
 //   myIndex++;
 //   if (myIndex > x.length) { myIndex = 1 }
 //   x[myIndex - 1].style.display = "block";
-//   setTimeout(carousel, 2000); // Change image every 2 seconds
+//   setTimeout(carousel, 2000);
 // }
 
-function Order(type, size, crust, topping, location) {
+function Order(type, size, crust, topping,) {
   this.type = type;
   this.size = size;
   this.crust = crust;
   this.topping = topping;
-  // this.location= location;
 }
 
 Order.prototype.fullOrder = function() {
@@ -41,10 +40,21 @@ var crustPrices = [50, 55, 60, 70, 100];
 var toppingPrices = [100, 110, 120, 130, 140, 150, 160];
 var deliveryPrices = [0, 300];
 
+function Deliver(name, location) {
+  this.name = name;
+  this.location = location;
+}
+
+Deliver.prototype.finalDeliver = function() {
+  return this.name + this.location;
+};
+
 $(document).ready(function() {
   $('form#form1').submit(function(event) {
     event.preventDefault();
     var pizzaType = $('#type').val();
+    var name = $('#name1').val();
+    var location = $('#location').val();
     var pizzaSize = parseInt($('#size').val());
     var pizzaCrust = parseInt($('#crust').val());
     var pizzaTop = parseInt($('#top').val());
@@ -57,6 +67,8 @@ $(document).ready(function() {
 
     newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
     newTotal = new Total(price, pizzaQty, toppingCost, crustCost, deliveryCost);
+    newDeliver = new Deliver(name, location);
+
     if (pizzaPick === 1) {
       document.getElementById("specs").innerHTML =
       `Your order is ${newOrder.fullOrder()}.`
@@ -64,18 +76,18 @@ $(document).ready(function() {
       `Your bill is ${newTotal.finalTotal()}.You will receive your pizza in the next few minutes.`
     } else {
       if (pizzaPick === 2) {
-        prompt`Enter where you want your pizza to be delivered`
         document.getElementById("specs").innerHTML =
         `Your order has been received and it will be delivered.`
         document.getElementById("status").innerHTML =
         `Your order is ${newOrder.fullOrder()}.`
         document.getElementById("total").innerHTML =
         `Your bill is ${newTotal.finalTotal()}.You pizza will be delivered in the next 30minutes.`
+        document.getElementById("loc").innerHTML =
+        `Your delivery details ${newDeliver.finalDeliver()}.`
       }
     }
   });
 
-$(document).ready(function() {
   $('form#form2').submit(function(event) {
     event.preventDefault();
     var name = $('#name').val();
@@ -85,6 +97,6 @@ $(document).ready(function() {
     `Hello ${name}.Thank You for Contacting Us.`
   });
 });
-});
+
 
 

@@ -59,52 +59,37 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <img src="./img/Pizza Margherita.jpg" width="250px" height="200px" alt="">
-        <p class="text">Montana-Ksh Regular:550 Medium:800 Large:1000 Mega:1200</p>
+      <div class="col-md-4">
+        <img src="./img/Untitled design (1).png"  alt="">
       </div>
 
-      <div class="col-md-3">
-        <img src="./img/background3.jpeg" width="250px" height="200px" alt="">
-        <p class="text">Mimosa-Ksh Regular:550 Medium:800 Large:1000 Mega:1200</p>
+      <div class="col-md-4">
+        <img src="./img/Untitled design (3).png"  alt="">
       </div>
 
-      <div class="col-md-3">
-        <img src="./img/Mimosa.jpeg" width="250px" height="200px" alt="">
-        <p class="text">Fontana-Ksh Regular:550 Medium:800 Large:1000 Mega:1200</p>
+      <div class="col-md-4">
+        <img src="./img/Untitled design (2).png"  alt="">
       </div>
 
-      <div class="col-md-3">
-        <img src="./img/pizza vegerina.jpeg" width="250px" height="200px" alt="">
-        <p class="text">Funghi-Ksh Regular:550 Medium:800 Large:1000 Mega:1200</p>
-      </div>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <img src="./img/pizza-calzone.jpg" width="250px" height="200px" alt="">
-        <p class="text">Garicapati-Ksh Regular:550 Medium:800 Large:1000 Mega:1200</p>
+      <div class="col-md-4">
+        <img src="./img/Untitled design (4).png"  alt="">
       </div>
 
-      <div class="col-md-3">
-        <img src="./img/garicapati.jpeg" width="250px" height="200px" alt="">
-        <p class="text">Grilled-Ksh Regular:550 Medium:800 Large:1000 Mega:1200</p>
+      <div class="col-md-4">
+        <img src="./img/Untitled design (8).png" alt="">
       </div>
 
-      <div class="col-md-3">
-        <img src="./img/maranira.jpeg" width="250px" height="200px" alt="">
-        <p class="text">Vegetable-Ksh Regular:550 Medium:800 Large:1000 Mega:1200</p>
+      <div class="col-md-4">
+        <img src="./img/Untitled design (6).png" alt="">
       </div>
-
-      <div class="col-md-3">
-        <img src="./img/lemasson.jpeg" width="250px" height="200px" alt="">
-        <p class="text">Ivori-Ksh Regular:550 Medium:800 Large:1000 Mega:1200</p>
-      </div>
-    </div>
+</div>
   </div>
-  </section> -->
+ 
   <!-- Menu -->
 
   <!-- Order -->
@@ -120,7 +105,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 mx-auto py-2">
-                  <form id="form1">
+                  <form id="form1"  return ="false";>
                     <div class="form-group">
                       <label for="sel1">Choose Pizza:</label>
                       <select class="form-control" id="type">
@@ -176,9 +161,20 @@
                         <option value="2">Delivery@-Ksh.300</option>
                       </select>
                     </div>
+                    <div>
+                      <label for="name">Full Name</label>
+                      <input type="text" class="form-control" id="name1">
+                    </div>
+
+                    <div class=>
+                      <label for="loaction">Delivery Location</label>
+                      <input type="text" class="form-control new-county" id="location">
+                    </div>
 
                     <div class="form-group">
-                      <button type="submit" class="btn btn-danger btn-block">Place Order</button>
+                      <!-- <button type="submit" class="btn btn-danger btn-block">Place Order</button> --> 
+                      <!-- <button type="submit">Place your Order</button> -->
+                      <button type="submit" class="btn btn-primary" id="button">Place your Order</button>
                     </div>
                   </form>
                 </div>
@@ -196,9 +192,11 @@
                     <h2 class="section-heading mb-4">
                       <span class="section-heading-lower" id="receipt">Your Receipt</span>
                     </h2>
-                    <h1 id="specs">Your Order is:</h1><br>
-                    <h1 id="status"></h1><br>
-                    <h1 id="total"></h1><br>
+                    <h1>Your Order is:</h1><br>
+                    <h4 id="specs"></h4><br>
+                    <h4 id="status"></h4><br>
+                    <h4 id="total"></h4><br>
+                    <h4 id="loc"></h4><br>
                   </div>
                 </div>
               </div>
