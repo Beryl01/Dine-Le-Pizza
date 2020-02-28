@@ -12,11 +12,12 @@
 //   setTimeout(carousel, 2000); // Change image every 2 seconds
 // }
 
-function Order(type, size, crust, topping) {
+function Order(type, size, crust, topping, location) {
   this.type = type;
   this.size = size;
   this.crust = crust;
   this.topping = topping;
+  // this.location= location;
 }
 
 Order.prototype.fullOrder = function() {
