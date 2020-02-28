@@ -2,7 +2,7 @@
 body {
   font-family: Lora;
   background-image: linear-gradient(rgba(47, 23, 15, .65), rgba(47, 23, 15, .65))
-  ,url(./img/old/background2.jpeg);
+  ,url(../img/old/background2.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -28,10 +28,6 @@ span{
     text-align:center;
     font-family: Raleway;
 }
-
-/* #mainNav{
-    font-size: 30px;
-} */
 
 .text-faded {
   color: rgba(255, 255, 255, .3);
