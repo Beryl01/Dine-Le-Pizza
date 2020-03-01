@@ -77,7 +77,7 @@ $(document).ready(function() {
     } else {
       if (pizzaPick === 2) {
         document.getElementById("specs").innerHTML =
-        `Your order has been received and it will be delivered.`
+        `Your order has been received and it will be delivered at ksh.300.`
         document.getElementById("status").innerHTML =
         `Your order is ${newOrder.fullOrder()}.`
         document.getElementById("total").innerHTML =
@@ -87,6 +87,7 @@ $(document).ready(function() {
       }
     }
   });
+  
 
   $('form#form2').submit(function(event) {
     event.preventDefault();
