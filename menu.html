@@ -40,9 +40,6 @@
           <a class="nav-link text-uppercase text-expanded" href="menu.html#order">Orders</a>
         </li>
         <li class="nav-item px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="menu.html#receipt">Your Receipt</a>
-        </li>
-        <li class="nav-item px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact Us</a>
         </li>
       </ul>
@@ -117,10 +114,10 @@
                 <div class="form-group">
                   <label for="sel1">Choose Pizza Size:</label>
                   <select class="form-control" id="size">
-                    <option value="1">Small@-Ksh.550</option>
-                    <option value="2">Medium@-Ksh.800</option>
-                    <option value="3">Large@-Ksh.1000</option>
-                    <option value="4">Mega@-Ksh.1200</option>
+                    <option value="1@1200">Mega@-Ksh.1200</option>
+                    <option value="2@1000">Large@-Ksh.1000</option>
+                    <option value="3@800">Medium@-Ksh.800</option>
+                    <option value="4@550">Small@-Ksh.550</option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -168,45 +165,31 @@
                     <option value="2">Delivery@-Ksh.300</option>
                   </select>
                 </div>
-                <div>
+                <!-- <div>
                   <label for="name">Full Name(for deliveries)</label>
                   <input type="text" class="form-control" id="name1">
                 </div>
                 <div class=>
                   <label for="loaction">Delivery Location</label>
                   <input type="text" class="form-control new-county" id="location">
-                </div>
+                </div> -->
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary" id="button">Checkout Order</button>
                 </div>
+                <span class="section-heading-lower" id="receipt">Your Order Details</span>
+              </h2>
+              <h1>Your Order is:</h1><br>
+              <h3 id="specs"></h3><br>
+              <h3 id="status"></h3><br>
+              <h3 id="total"></h3><br>
+              <h3 id="loc"></h3>
               </form>
             </div>
           </div>
         </div>
       </div>
       <!-- Order -->
-
-      <!-- Receipt -->
-      <div class="container">
-        <div class="about-heading-content">
-          <div class="row">
-            <div class="col-xl-9 col-lg-10 mx-auto">
-              <div class="bg-faded rounded p-5">
-                <h2 class="section-heading mb-4">
-                  <span class="section-heading-lower" id="receipt">Your Receipt</span>
-                </h2>
-                <h1>Your Order is:</h1><br>
-                <h3 id="specs"></h3><br>
-                <h3 id="status"></h3><br>
-                <h3 id="total"></h3><br>
-                <h3 id="loc"></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <!-- Receipt -->
 
     <!-- Footer -->
     <footer class="footer text-faded text-center py-5">
