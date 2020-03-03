@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -10034,5 +10034,189 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, .85);
+}
+
+#mainNav {
+  background-color: rgba(47, 23, 15, .9);
+  font-family: Raleway;
+}
+
+#mainNav .navbar-brand {
+  color: #e6a756;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, .7);
+  font-weight: 1000;
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+  color: #e6a756;
+}
+
+.btn-xl {
+  font-weight: 700;
+  font-size: .8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.intro {
+  position: relative
+}
+
+.cta {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 1rem;
+  margin: .1rem;
+  background-color: rgba(255, 255, 255, .85);
+}
+
+.cta .cta-inner:before {
+  border-radius: .5rem;
+  content: '';
+  position: absolute;
+  top: -.5rem;
+  bottom: -.5rem;
+  left: -.5rem;
+  right: -.5rem;
+  border: .25rem solid rgba(255, 255, 255, .85);
+}
+
+.list-hours {
+  font-size: .9rem;
+}
+
+.list-hours .list-hours-item {
+  border-bottom: 1px solid rgba(230, 167, 86, .5);
+  padding-bottom: .25rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.list-hours .list-hours-item.today {
+  font-weight: 700;
+  color: #e6a756;
+}
+
+.address strong {
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: rgba(47, 23, 15, .9);
+  font-weight: 800;
+}
+
+.text-primary {
+  color: #e6a756 !important;
+}
+
+.bg-primary {
+  background-color: #e6a756 !important;
+}
+
+.btn {
+  box-shadow: 0 3px 3px 0 rgba(33, 37, 41, .1);
+}
+
+.btn-primary {
+  background-color: #e6a756;
+  border-color: #e6a756;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #df902a;
+  border-color: #df902a;
+}
+
+.font-weight-light {
+  font-weight: 100 !important;
+}
+
+#name,
+#email,
+#comment {
+  background: transparent;
+  font-family: 'Nunito Sans';
+  color: black;
+  font-size: 20px;
+}
+
+.form::-webkit-input-placeholder {
+  color:black;
+}
+
+#name {
+  width: 30%;
+  margin-left: 20%;
+  margin-right: 30px;
+}
+
+#email {
+  width: 30%;
+}
+
+#comment {
+  margin-left: 5%;
+  width: 90%;
+}
+
+button {
+  margin-left: 50%;
+  margin-bottom: 20px;
+  align-items: center;
+  font-family: 'Nunito Sans';
+}
+
+.col-md-4 {
+  margin-bottom: 2%;
+}
+
+.img-hover-zoom {
+  /* [1.1] Set it as per your need */
+  overflow: hidden /* [1.2] Hide the overflowing of child elements */
+}
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+  /* [1] The container */
+/* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+  transition: transform .5s ease-in-out;
+}
+/* The Transformation */
+.img-hover-zoom--zoom-n-rotate:hover img {
+  transform: scale(2) rotate(360deg);
 }
 /*# sourceMappingURL=bootstrap.css.map */
