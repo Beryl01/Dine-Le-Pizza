@@ -77,7 +77,9 @@ $(document).ready(function() {
       `Your bill is ${newTotal.finalTotal()}.You will receive your pizza in the next few minutes.`
     } else {
       if (pizzaPick === 2) {
-        alert(`Your order is ${newOrder.fullOrder()}.Your delivery details ${newDeliver.finalDeliver()}.Your bill is ${newTotal.finalTotal()}.You pizza will be delivered in the next 30minutes.`);
+        alert(`Your order is ${newOrder.fullOrder()}.Your bill is ${newTotal.finalTotal()}.You pizza will be delivered in the next 30minutes.`);
+        prompt(`Your delivery details.`);
+        alert(`Your bill is ${newTotal.finalTotal()}.You pizza will be delivered in the next 30minutes.`);
         document.getElementById("specs").innerHTML =
         `Your order has been received and it will be delivered at ksh.300.`
         document.getElementById("status").innerHTML =
@@ -85,7 +87,7 @@ $(document).ready(function() {
         document.getElementById("total").innerHTML =
         `Your bill is ${newTotal.finalTotal()}.You pizza will be delivered in the next 30minutes.`
         document.getElementById("loc").innerHTML =
-        `Your delivery details ${newDeliver.finalDeliver()}.`
+        `Your delivery details.`
       }
     }
   });
