@@ -35,7 +35,7 @@ Total.prototype.finalTotal = function() {
   return (this.price + this.crust + this.topping)* this.quantity + this.delivery;
 };
 
-var sizePrice = [550, 800, 1000, 1200];
+var sizePrice = [1200, 1000, 800, 550];
 var crustPrices = [50, 55, 60, 70, 100];
 var toppingPrices = [100, 110, 120, 130, 140, 150, 160];
 var deliveryPrices = [0, 300];
@@ -70,12 +70,14 @@ $(document).ready(function() {
     newDeliver = new Deliver(name, location);
 
     if (pizzaPick === 1) {
+      alert(`Your order is ${newOrder.fullOrder()}.Your bill is ${newTotal.finalTotal()}.You will receive your pizza in the next few minutes.`);
       document.getElementById("specs").innerHTML =
       `Your order is ${newOrder.fullOrder()}.`
       document.getElementById("status").innerHTML =
       `Your bill is ${newTotal.finalTotal()}.You will receive your pizza in the next few minutes.`
     } else {
       if (pizzaPick === 2) {
+        alert(`Your order is ${newOrder.fullOrder()}.Your delivery details ${newDeliver.finalDeliver()}.Your bill is ${newTotal.finalTotal()}.You pizza will be delivered in the next 30minutes.`);
         document.getElementById("specs").innerHTML =
         `Your order has been received and it will be delivered at ksh.300.`
         document.getElementById("status").innerHTML =
@@ -87,7 +89,6 @@ $(document).ready(function() {
       }
     }
   });
-  
 
   $('form#form2').submit(function(event) {
     event.preventDefault();
