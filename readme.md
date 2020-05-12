@@ -1,7 +1,7 @@
 ## {Project Name}
 Dine-Le-Pizza
 ## {Project Description}
-Dine-Le-Pizza is a website for user to order their pizza.
+Dine-Le-Pizza is a website for user to order their pizza that you like.
 ## {Author}
 Beryl Negesa Otieno
 * email: beryl00002@gmail.com.
